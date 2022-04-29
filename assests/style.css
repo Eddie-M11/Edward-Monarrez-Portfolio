@@ -16,7 +16,7 @@ header {
 
 
 body {
-    background-color: ;
+    background-color: aliceblue;
 }
 
 
@@ -29,6 +29,15 @@ body {
     position: relative;
     bottom: 70px;
     
+}
+ picture img {
+    height: 220px;
+    width: 220px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 70px;
 }
 
 nav {
@@ -50,36 +59,105 @@ nav a {
 
 }
 
+main {
+    display: flex;
+    margin: 100px;
+    position: relative;
+    left: 120px;
+    
+}
+
+main h1 {
+    font-size: 40px;
+    display: flex;
+    position: relative;
+    right: 190px;
+}
+
+.card-contanier h2 {
+    margin-left: -80px;
+    font-size: 40px;
+    display: flex;
+    position: absolute;
+    left: 200px;
+    background-color: red;
+    
+}
+
+main p {
+    display: flex;
+    position: relative;
+    right: 120px;
+    margin-right: 90px;
+}
+
+
 section {
     display: flex;
-    justify-content: center;
+    position: relative;
+    /* justify-content: right; */
     padding: 10px;
+
 }
 
 
 .card-contanier {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+
 }
 
 .card {
+    width: 50%;
+    margin: 10px 0;
     background-color: lightblue;
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: ;
+    display: block;
+    right: 100px;
+    border: 8px solid grey;
+    
 }
 
 .card-tittle {
-    background-color: red;
-    padding: 10px;
-
+    position: absolute;
+    display: flex;
+    border: 1px solid;
+    max-width: 30%;
+    left: 200px;
+    font-size: 35px;
 }
 
 .card-img {
+    max-width: 100%;
+ 
 
 }
 
-.card-description [
+.card-description {
+    position: absolute;
+    display: flex;
+    border: 1px solid;
+   
+}
 
-]
+.block {
+    width:400px;
+    height:200px;
+    position:relative;
+}
+.block:before {
+    content:"";
+    width:2px;
+    height:100%;
+    display:block;
+    left:70%;
+    position:absolute;
+    background-image: -webkit-linear-gradient(top, #000, #000, #000);
+    background-image: -moz-linear-gradient(top, #000, #000, #000);
+    background-image: -ms-linear-gradient(top, #000, #000, #000);
+    background-image: -o-linear-gradient(top, #000, #000, #000);
+    background-image: linear-gradient(top, #000, #000, #000);
+  }
